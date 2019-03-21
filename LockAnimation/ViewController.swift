@@ -65,7 +65,8 @@ class ViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-   
+    // Jenia, please help here:
+    // how it make correct?? (instead - 137.0 & - 37.0)
       imageViews[0].center.x = welcomeView.center.x - 137.0
       imageViews[1].center.x = welcomeView.center.x - 37.0
   }
