@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9Q-h4-8Q3">
-                                <rect key="frame" x="164" y="441" width="46" height="30"/>
+                                <rect key="frame" x="164.5" y="441" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gq3-wk-u6E"/>
@@ -50,8 +50,7 @@
                             <constraint firstItem="x9Q-h4-8Q3" firstAttribute="top" secondItem="Jkk-oi-9we" secondAttribute="bottom" constant="7.5" id="I3y-V8-Lv8"/>
                             <constraint firstItem="0hD-gv-Dva" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W6L-SM-0h7"/>
                             <constraint firstItem="0hD-gv-Dva" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pff-ih-BEV"/>
-                            <constraint firstItem="x9Q-h4-8Q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="sVL-RX-J3K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x9Q-h4-8Q3" secondAttribute="trailing" constant="165" id="sjf-6U-LVp"/>
+                            <constraint firstItem="x9Q-h4-8Q3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sH6-FV-4fM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

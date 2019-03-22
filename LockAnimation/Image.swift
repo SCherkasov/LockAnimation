@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
-    func divideIntoTwoVertialParts() -> [UIImage] {
+    func divideIntoTwoVertiсalParts() -> [UIImage] {
         let cgimage = self.cgImage!
         
         let contextImage: UIImage = UIImage(cgImage: cgimage)
@@ -37,8 +37,6 @@ extension UIImage {
         ]
     }
 }
-
-
 
 func crop(image: UIImage, to frame: CGRect) -> UIImage {
     let cgimage = image.cgImage!
