@@ -61,15 +61,6 @@ class ViewController: UIViewController {
     self.welcomeView.addSubview(imageViews[1])
     
   }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    
-    // Jenia, please help here:
-    // how it make correct?? (instead - 137.0 & - 37.0)
-      imageViews[0].center.x = welcomeView.center.x - 137.0
-      imageViews[1].center.x = welcomeView.center.x - 37.0
-  }
 
   @IBAction func actionButton(_ sender: UIButton) {
     switch self.doorSate {
@@ -85,15 +76,15 @@ class ViewController: UIViewController {
   func transition(to nextDoorState: DoorState) {
     if nextDoorState == .opened {
       UIView.animate(withDuration: 1.0, delay: 0.3, options: [], animations: {
-        self.imageViews[0].center.x = (self.welcomeView.center.x - 137.0) - 100
-        self.imageViews[1].center.x = (self.welcomeView.center.x - 37.0) + 100
+        self.imageViews[0].center.x -= self.welcomeView.bounds.width / 2
+        self.imageViews[1].center.x += self.welcomeView.bounds.width / 2
         self.imageViews[0].alpha = 0.0
         self.imageViews[1].alpha = 0.0
       }, completion: nil)
     } else {
         UIView.animate(withDuration: 1.0, delay: 0.3, options: [], animations: {
-        self.imageViews[0].center.x = self.welcomeView.center.x - 137.0
-        self.imageViews[1].center.x = self.welcomeView.center.x - 37.0
+        self.imageViews[0].center.x += self.welcomeView.bounds.width / 2
+        self.imageViews[1].center.x -= self.welcomeView.bounds.width / 2
          self.imageViews[0].alpha = 0.5
           self.imageViews[1].alpha = 0.5
         }, completion: nil)
